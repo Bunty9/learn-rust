@@ -1,6 +1,9 @@
+mod borrow;
 mod heap_stack;
 mod mem_mgmt;
 mod mutability;
+mod ownership;
+mod structs;
 
 fn main() {
     println!("Hello, cargoo!!!");
@@ -73,6 +76,22 @@ fn main() {
     println!("{}", "=".repeat(50));
 
     heap_stack::demonstrate_stack_vs_heap();
+
+    println!("\n{}", "=".repeat(50));
+    println!("OWNERSHIP EXAMPLES");
+    println!("{}", "=".repeat(50));
+
+    ownership::vars_in_functions();
+    ownership::scope_in_function();
+    ownership::strings_in_functions();
+    ownership::strings_in_funtions_2();
+
+    borrow::demonstrate_borrowing();
+
+    structs::demonstrate_structs();
+    structs::demonstrate_methods();
+    structs::demonstrate_debug();
+    structs::demonstrate_unit_structs();
 }
 
 //this is where ownership comes into picture
