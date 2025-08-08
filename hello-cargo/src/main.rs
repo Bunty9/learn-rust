@@ -1,9 +1,12 @@
 mod borrow;
+mod enums;
 mod heap_stack;
 mod mem_mgmt;
 mod mutability;
+mod option_enum;
 mod ownership;
 mod structs;
+mod vectors;
 
 fn main() {
     println!("Hello, cargoo!!!");
@@ -92,6 +95,9 @@ fn main() {
     structs::demonstrate_methods();
     structs::demonstrate_debug();
     structs::demonstrate_unit_structs();
+
+    enums::demonstrate_enums();
+    enums::demonstrate_enum_game();
 }
 
 //this is where ownership comes into picture
