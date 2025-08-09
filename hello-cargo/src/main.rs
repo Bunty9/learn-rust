@@ -1,5 +1,6 @@
 mod borrow;
 mod enums;
+mod hashmaps;
 mod heap_stack;
 mod mem_mgmt;
 mod mutability;
@@ -96,8 +97,22 @@ fn main() {
     structs::demonstrate_debug();
     structs::demonstrate_unit_structs();
 
+    println!("\n{}", "=".repeat(50));
+    println!("ENUMS EXAMPLES");
+    println!("{}", "=".repeat(50));
     enums::demonstrate_enums();
     enums::demonstrate_enum_game();
+
+    println!("\n{}", "=".repeat(50));
+    println!("VECTORS EXAMPLES");
+    println!("{}", "=".repeat(50));
+    vectors::demostrate_vectors();
+
+    println!("\n{}", "=".repeat(50));
+    println!("HASHMAPS EXAMPLES");
+    println!("{}", "=".repeat(50));
+
+    hashmaps::demonstrate_hashmaps();
 }
 
 //this is where ownership comes into picture
